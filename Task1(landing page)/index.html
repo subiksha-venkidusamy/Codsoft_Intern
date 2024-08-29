@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness Program Landing Page</title>
+    <link rel="stylesheet" href="styles1.css" />
+  </head>
+  <body>
+    <div class="landing-page">
+      <header>
+        <h1>Get Fit in 30 Days!</h1>
+        <p>Join our proven fitness program and transform your body and mind.</p>
+      </header>
+
+      <section class="video">
+        <video controls>
+          <iframe
+            src="https://player.vimeo.com/video/3125907"
+            width="640"
+            height="360"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+
+          Your browser does not support the video tag.
+        </video>
+      </section>
+
+      <section class="content">
+        <h2>What You'll Get:</h2>
+        <ul>
+          <li>Personalized workout plans</li>
+          <li>Daily motivation and support</li>
+          <li>Access to exclusive content and videos</li>
+        </ul>
+      </section>
+
+      <section class="cta">
+        <h2>Ready to Transform?</h2>
+        <p>Sign up now and start your journey to a healthier, fitter you.</p>
+        <a href="#signup" class="btn">Join Now!</a>
+      </section>
+
+      <section id="signup" class="signup-form">
+        <h2>Sign Up for the Program</h2>
+        <form onsubmit="showAlert(event)">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <button type="submit" class="btn">Sign Up</button>
+        </form>
+      </section>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <h3>FitLife Inc.</h3>
+        <p>123 Fitness Lane</p>
+        <p>Wellness City, FIT 45678</p>
+        <p>Email: contact@fitlife.com</p>
+        <p>Phone: (123) 456-7890</p>
+      </div>
+    </footer>
+
+    <script>
+      function showAlert(event) {
+        event.preventDefault(); // Prevent form submission
+        alert("Registration successful!"); // Show alert message
+      }
+    </script>
+  </body>
+</html>
